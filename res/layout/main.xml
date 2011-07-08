@@ -5,9 +5,30 @@
     android:layout_height="fill_parent"
     >
 <TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="Hello World, Main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Hello World, Main activity class"
     />
+<EditText
+     android:id="@+id/field"
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+     android:singleLine="false"
+     />
+<CheckBox
+     android:id="@+id/checkbox"
+     android:layout_marginTop="20px"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="This checkbox is: unchecked"
+        />
+<Button
+        android:id="@+id/button"
+        android:layout_height="20px"
+        android:layout_width="50px"
+        android:text="submit"
+            />
+
+
 </LinearLayout>
 
