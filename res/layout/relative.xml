@@ -31,4 +31,13 @@
             android:layout_toLeftOf="@id/ok"
             android:layout_alignTop="@id/ok"
             />
+    <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="back"
+            android:layout_below="@id/edit"
+            android:layout_alignTop="@id/ok"
+            android:onClick="back"
+            />
 </RelativeLayout>

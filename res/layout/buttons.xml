@@ -13,6 +13,7 @@
             android:layout_width="wrap_content"
             android:text="relative"
             android:layout_below="@id/dummy"
+            android:onClick="setRelativeLayout"
             />
     <Button
             android:id="@+id/b_scroll"
@@ -21,6 +22,7 @@
             android:text="scroll"
             android:layout_toRightOf="@id/b_relative"
             android:layout_alignTop="@id/b_relative"
+            android:onClick="setScrollLayout"
             />
 
 </RelativeLayout>
