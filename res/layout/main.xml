@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="Hello World, Main activity class"
-    />
-<EditText
-     android:id="@+id/field"
-     android:layout_height="wrap_content"
-     android:layout_width="fill_parent"
-     android:singleLine="false"
-     />
-<CheckBox
-     android:id="@+id/checkbox"
-     android:layout_marginTop="20px"
-     android:layout_height="wrap_content"
-     android:layout_width="wrap_content"
-     android:text="This checkbox is: unchecked"
-        />
-<Button
-        android:id="@+id/button"
-        android:layout_height="20px"
-        android:layout_width="50px"
-        android:text="submit"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        >
+    <TextView
+            android:id="@+id/label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="14px"
+            android:text="URL:"
             />
-
-
-</LinearLayout>
+    <EditText
+            android:id="@+id/edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/label"
+            />
+    <Button
+            android:id="@+id/ok"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/edit"
+            android:layout_alignRight="@id/edit"
+            android:text="Ok"
+            />
+    <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_toLeftOf="@id/ok"
+            android:layout_alignTop="@id/ok"
+            />
+</RelativeLayout>
 
